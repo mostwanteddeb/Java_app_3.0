@@ -96,7 +96,7 @@ pipeline {
                             passwordVariable: "PASS"
                         )
                     ]) {
-                        sh "curl -X PUT -u '$USER:$PASS' -T kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar http://16.171.161.99:8082/artifactory/example-repo-local/"
+                        sh "curl -X PUT -u '$USER:$PASS' -T kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar http://http://44.201.233.51:8082/artifactory/example-repo-local/"
                     }
                 }
             }
